@@ -1,0 +1,17 @@
+# Data files
+data/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Environment folders
+.venv/
+venv/
+env/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Models
+models/

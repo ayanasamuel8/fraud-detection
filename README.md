@@ -73,8 +73,30 @@ The project is currently in the **Data Preprocessing and Feature Engineering** p
     jupyter lab
     ```
 
+## Model Building Progress
+
+Model development is underway in the following notebooks:
+
+- `notebooks/02_model_building_ecommerce.ipynb`: Implements and compares multiple classification algorithms (Logistic Regression, XGBoost) for the e-commerce dataset. Includes hyperparameter tuning and evaluation using metrics suitable for imbalanced data.
+- `notebooks/03_model_building_creaditcard.ipynb`: Applies similar modeling and evaluation techniques to the credit card dataset.
+
+Each notebook documents:
+- Data loading and preprocessing
+- Model training and validation
+- Performance metrics (Precision, Recall, F1, AUPRC)
+- Feature importance analysis
+
+## Continuous Integration (CI)
+
+Automated CI is set up to ensure code quality and reproducibility:
+
+- **Testing:** All code in the `src/` and `tests/` directories is automatically tested using `pytest`.
+- **Linting:** Code style is checked with `flake8` to enforce PEP8 standards.
+- **GitHub Actions:** The repository includes a workflow file (`.github/workflows/ci.yml`) that runs tests and linting on every push and pull request, ensuring that only high-quality code is merged.
+- **Docker Build:** The CI pipeline also verifies that the Docker image builds successfully.
+
 ## Next Steps
 
-*   **Model Building:** Proceed with `02_model_building_ecommerce.ipynb` and `03_model_building_creaditcard.ipynb` to train, evaluate, and compare various classification models (e.g., Logistic Regression, RandomForest, XGBoost).
-*   **Model Evaluation:** Focus on appropriate metrics for imbalanced datasets, such as Precision, Recall, F1-Score, and the Area Under the Precision-Recall Curve (AUPRC).
-*   **Deployment:** Package the best-performing model into a deployable API using Flask or FastAPI.
+*   Continue model development and evaluation in the modeling notebooks.
+*   Integrate model deployment (API) and monitoring solutions.
+*   Expand test coverage and add more robust validation for new features and models.

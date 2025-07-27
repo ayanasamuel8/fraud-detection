@@ -9,3 +9,4 @@ lightgbm
 shap
 ipykernel
 plotly
+imblearn

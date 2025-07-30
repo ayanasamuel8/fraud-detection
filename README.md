@@ -67,8 +67,13 @@ Interpretability is essential for trust and actionable insights:
     - **Local explanations:** SHAP force plots show feature contributions for individual predictions
 
 **Visual Placeholders:**
-- ![SHAP Summary Plot Placeholder](reports/analysis_images/shap_summary_placeholder.png)
-- ![SHAP Force Plot Placeholder](reports/analysis_images/shap_force_placeholder.png)
+> For Ecommerce Data
+- ![SHAP Summary Plot Placeholder](reports/analysis_images/xgboost_ecommerce_shap.png)
+- ![SHAP Force Plot Placeholder](reports/analysis_images/xgboost_ecommerce_shap_force.png)
+
+> For credit card data
+- ![SHAP Summary Plot Placeholder](reports/analysis_images/xgboost_creditcard_shap.png)
+- ![SHAP Force Plot Placeholder](reports/analysis_images/xgboost_creditcard_shap_force.png)
 
 ### 5. Continuous Integration & Quality Assurance
 
